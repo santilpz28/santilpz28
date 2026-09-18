@@ -212,7 +212,7 @@ Technical writeups with production parallels, published via [chainguard-pages](h
 
 | Challenge | Class | Vulnerability | Writeup |
 |---|---|---|---|
-| **MD5 Road — The Revenge** | Crypto | MD5 length extension with chosen-pad obstacle — bus_id as oracle, byte-by-byte recovery in ~13K predictions | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-md5-length-extension-revenge.html) |
+| **MD5 Road — The Revenge** | Crypto | The server hands you `md5(secret)` in the banner. Send the MD5 internal padding as your input and the server turns into a length-extension oracle. Byte-by-byte recovery of the 52-byte secret in about 13K hash predictions. | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-md5-length-extension-revenge.html) |
 
 ### Other CTF & learning repos
 
