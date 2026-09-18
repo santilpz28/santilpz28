@@ -205,8 +205,8 @@ Technical writeups with production parallels, published via [chainguard-pages](h
 
 | Challenge | Class | Vulnerability | Writeup |
 |---|---|---|---|
-| **MD5 Road** | Crypto | Truncated MD5 prefix collision (20-bit comparison) — birthday attack | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-md5-truncated-collision.html) |
-| **Space Pinch** | Side-channel | Reed-Solomon multi-sample majority-vote attack (32 noisy queries) | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-reed-solomon-multisample.html) |
+| **MD5 Road** | Crypto | The server compares only the first 5 characters of an MD5 hash. Brute-forceable in under a second on any laptop. | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-md5-truncated-collision.html) |
+| **Space Pinch** | Side-channel | Each noisy copy of the secret is useless on its own. The server lets you ask 32 times, so a majority vote recovers the original. | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-reed-solomon-multisample.html) |
 
 #### Hackademics Forum CTF 2025 — Daysa
 
