@@ -197,14 +197,22 @@ Self-hosted LLM inference stack with privacy-first design. Run models locally, n
 
 ## 📚 Write-ups & CTF
 
-### Featured: NavajaNegra 2025 — Caliphal Labs CTF
+### Featured CTF Writeups
 
 Technical writeups with production parallels, published via [chainguard-pages](https://santilpz28.github.io/chainguard-pages/#writeups).
+
+#### NavajaNegra 2025 — Caliphal Labs CTF
 
 | Challenge | Class | Vulnerability | Writeup |
 |---|---|---|---|
 | **MD5 Road** | Crypto | Truncated MD5 prefix collision (20-bit comparison) — birthday attack | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-md5-truncated-collision.html) |
 | **Space Pinch** | Side-channel | Reed-Solomon multi-sample majority-vote attack (32 noisy queries) | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-reed-solomon-multisample.html) |
+
+#### Hackademics Forum CTF 2025 — Daysa
+
+| Challenge | Class | Vulnerability | Writeup |
+|---|---|---|---|
+| **MD5 Road — The Revenge** | Crypto | MD5 length extension with chosen-pad obstacle — bus_id as oracle, byte-by-byte recovery in ~13K predictions | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-md5-length-extension-revenge.html) |
 
 ### Other CTF & learning repos
 
