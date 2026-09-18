@@ -197,11 +197,24 @@ Self-hosted LLM inference stack with privacy-first design. Run models locally, n
 
 ## 📚 Write-ups & CTF
 
+### Featured: NavajaNegra 2025 — Caliphal Labs CTF
+
+Technical writeups with production parallels, published via [chainguard-pages](https://santilpz28.github.io/chainguard-pages/#writeups).
+
+| Challenge | Class | Vulnerability | Writeup |
+|---|---|---|---|
+| **MD5 Road** | Crypto | Truncated MD5 prefix collision (20-bit comparison) — birthday attack | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-md5-truncated-collision.html) |
+| **Space Pinch** | Side-channel | Reed-Solomon multi-sample majority-vote attack (32 noisy queries) | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-reed-solomon-multisample.html) |
+
+### Other CTF & learning repos
+
 | Resource | Description |
 |---|---|
 | [Ethernaut Solutions (Foundry)](https://github.com/santilpz28/ethernaut-foundry) | Solve Ethernaut CTF levels using Foundry |
 | [Damn Vulnerable DeFi](https://github.com/santilpz28/dvdf-solutions) | Walkthroughs of DeFi exploits |
 | [HackTheBox Write-ups](https://github.com/santilpz28/htb-writeups) | Selected retired machines, focus on web + AD |
+| [Master Signature Attacks](https://github.com/santilpz28/master-signature-attacks) | Solidity security workshop: vulnerable vs secure `ecrecover` |
+| [RedOps Toolkit](https://github.com/santilpz28/redops) | Red Team toolkit — port scanning, recon, wordlists, exploits |
 
 ---
 
