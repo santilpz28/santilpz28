@@ -1,104 +1,14 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="Santiago López Castaño — Cybersecurity & Automation Engineer" width="100%">
+<img src="assets/banner.png" alt="Santiago López Castaño — Offensive Security, DevSecOps and Smart Contract Auditor" width="100%">
 
 <br>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/santiagolopez-cyber/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:santi.lpz28@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://santilpz28.github.io/chainguard-pages/)
-[![eJPT](https://img.shields.io/badge/eJPT-certified-22c55e?style=for-the-badge&logo=securityscorecard&logoColor=white)](https://github.com/santilpz28)
-[![OSCP](https://img.shields.io/badge/OSCP-in%20progress-f59e0b?style=for-the-badge&logo=offensive-security&logoColor=white)](https://github.com/santilpz28)
 
 </div>
-
----
-
-<div align="center">
-
-## 🛡️ ChainGuard — Web3 Risk Intelligence Platform
-
-<img src="assets/architecture.png" alt="ChainGuard architecture: signals, core services, JARVIS agent, output" width="100%">
-
-**[Repo](https://github.com/santilpz28/cortex)** · **[Live demo](https://santilpz28.github.io/chainguard-pages/)** · **[Live API](https://chain-cortex.com/)**
-
-</div>
-
-Scans Web3 domains, contracts and addresses, then merges on-chain signals, repo metadata and OSINT into one risk score.
-
-| | |
-|---|---|
-| **4 services** | scraper · analysis · FastAPI · frontend |
-| **34/34 security tests** | including 15 deliberate injection attempts (SQLi, XSS, SSTI, command injection, path traversal) |
-| **186-entry dictionary** | 5 chains, 9 documented historical exploits |
-| **Hydra orchestrator** | multi-model failover in <200 ms |
-| **EIP-712 wallet auth** | no third-party custodian involved |
-
----
-
-<div align="center">
-
-## 🐛 PHP2Shell — Anatomy of two critical PHP CVEs
-
-<img src="assets/cve-flow.png" alt="CVE-2026-109618 and CVE-2026-109619 exploitation flow and verification method" width="100%">
-
-**[Repo (ES)](https://github.com/santilpz28/php2shell-pub)** · **[Repo (EN)](https://github.com/santilpz28/php2shell-pub-en)**
-
-</div>
-
-A use-after-free in PHP core that reaches RCE without authentication. I documented the whole thing, including a differential detector that works without offsets and doesn't care about ASLR.
-
-- **3 local Docker targets** — vulnerable 8.2.34, patched 8.2.35, and 8.2.34 with the patch backported on top (same version string, because version strings are lies)
-- **6/6 UAF reproduced** on the unpatched build, **0/6** on the patched one, measured against a real binary
-- Cross-checked against advisory `GHSA-6wmf-4rv5-p3rp`
-
----
-
-<div align="center">
-
-## 🤖 JARVIS — the agent that runs it all
-
-<img src="assets/jarvis-terminal.gif" alt="JARVIS status output: live stack status, endpoints, health and CVE scan results" width="820">
-
-</div>
-
-My own agent. Runs on local models so audit data never leaves the machine, wired to a hardened VPS over an encrypted Zero-Trust tunnel. Watches the stack, writes the reports, delivers them.
-
-**[Repo](https://github.com/santilpz28/Jarvis)**
-
-It also taught me the hard way that **a queue without a consumer is a silent black hole** — eight weeks of reports, zero delivered, nobody noticing. That lesson is now a health check.
-
----
-
-<div align="center">
-
-## 🔧 redops — Network Recon Toolkit
-
-<img src="assets/redops-scan.gif" alt="redops portly scanning a host and fingerprinting services by banner" width="820">
-
-</div>
-
-Small CLI tools for recon. Each one does a single job, none of them are obfuscated, none exceed 200 lines. The GIF above is a real scan — those banners came off the wire.
-
-| Tool | What it does |
-|---|---|
-| `portly` | Multi-threaded port scanner — CIDR ranges, banner grab, JSON/CSV output |
-| `subrecon` | Subdomain enumerator — crt.sh, wordlist, VirusTotal |
-| `dirbust` | Web directory buster with status-code triage |
-
-**[Repo](https://github.com/santilpz28/redops)**
-
----
-
-<div align="center">
-
-## 📊 By the numbers
-
-<img src="assets/dashboard.png" alt="Metrics: CVSS 9.2, 15 injection attempts blocked, 108 Solidity tests, -86% reporting time, live stack status" width="100%">
-
-</div>
-
-Every number above came from a running stack or a passing test suite. Nothing here is decoration.
 
 ---
 
@@ -130,6 +40,62 @@ I break things for a living, then fix them properly.
 **Wild About Lapland** — Operations & Customer Supervisor · Rovaniemi, Finland · *Oct 2021 – May 2024*
 - Ran daily operations and incident response at −25 °C for **1,000+ international clients** every season. Kept customer satisfaction at **4.7/5**.
 - Replaced "we'll figure it out" organization with a central database and actual SOPs.
+
+---
+
+## 🛡️ Projects
+
+### ChainGuard — Web3 Risk Intelligence Platform
+
+<img src="assets/architecture.png" alt="ChainGuard architecture: signals, core services, JARVIS agent, output" width="100%">
+
+**[Repo](https://github.com/santilpz28/cortex)** · **[Live demo](https://santilpz28.github.io/chainguard-pages/)** · **[Live API](https://chain-cortex.com/)**
+
+Scans Web3 domains, contracts and addresses, then merges on-chain signals, repo metadata and OSINT into one risk score.
+
+| | |
+|---|---|
+| **4 services** | scraper · analysis · FastAPI · frontend |
+| **34/34 security tests** | including 15 deliberate injection attempts (SQLi, XSS, SSTI, command injection, path traversal) |
+| **186-entry dictionary** | 5 chains, 9 documented historical exploits |
+| **Hydra orchestrator** | multi-model failover in <200 ms |
+| **EIP-712 wallet auth** | no third-party custodian involved |
+
+### PHP2Shell — Anatomy of two critical PHP CVEs
+
+<img src="assets/cve-flow.png" alt="CVE-2026-109618 and CVE-2026-109619 exploitation flow and verification method" width="100%">
+
+**[Repo (ES)](https://github.com/santilpz28/php2shell-pub)** · **[Repo (EN)](https://github.com/santilpz28/php2shell-pub-en)**
+
+A use-after-free in PHP core that reaches RCE without authentication. I documented the whole thing, including a differential detector that works without offsets and doesn't care about ASLR.
+
+- **3 local Docker targets** — vulnerable 8.2.34, patched 8.2.35, and 8.2.34 with the patch backported on top (same version string, because version strings are lies)
+- **6/6 UAF reproduced** on the unpatched build, **0/6** on the patched one, measured against a real binary
+- Cross-checked against advisory `GHSA-6wmf-4rv5-p3rp`
+
+### JARVIS — the agent that runs it all
+
+<img src="assets/jarvis-terminal.gif" alt="JARVIS status output: live stack status, endpoints, health and CVE scan results" width="820">
+
+**[Repo](https://github.com/santilpz28/Jarvis)**
+
+My own agent. Runs on local models so audit data never leaves the machine, wired to a hardened VPS over an encrypted Zero-Trust tunnel. Watches the stack, writes the reports, delivers them.
+
+It also taught me the hard way that **a queue without a consumer is a silent black hole** — eight weeks of reports, zero delivered, nobody noticing. That lesson is now a health check.
+
+### redops — Network Recon Toolkit
+
+<img src="assets/redops-scan.gif" alt="redops portly scanning a host and fingerprinting services by banner" width="820">
+
+Small CLI tools for recon. Each one does a single job, none of them are obfuscated, none exceed 200 lines. The GIF above is a real scan — those banners came off the wire.
+
+| Tool | What it does |
+|---|---|
+| `portly` | Multi-threaded port scanner — CIDR ranges, banner grab, JSON/CSV output |
+| `subrecon` | Subdomain enumerator — crt.sh, wordlist, VirusTotal |
+| `dirbust` | Web directory buster with status-code triage |
+
+**[Repo](https://github.com/santilpz28/redops)**
 
 ---
 
@@ -165,6 +131,8 @@ My hardware playground: Raspberry Pi 4B hardening, Pixhawk drone telemetry, Flip
 ---
 
 ## 🧰 Stack
+
+<img src="assets/stack.png" alt="Stack by capability area: Offensive Security, Smart Contracts, Linux and DevSecOps, Automation and Data, OSINT and Intel, Cloud and AI" width="100%">
 
 | Area | Tools |
 |---|---|
