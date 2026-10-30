@@ -1,9 +1,8 @@
 <div align="center">
 
 # Santiago López Castaño
-### Cybersecurity · Web3 Security · Linux & Smart Contracts
 
-**Available for hire** · Remote (CET) · Open to relocation
+**Cybersecurity & Automation Engineer · Offensive Security & Web3 Security**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/santiagolopez-cyber/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:santi.lpz28@gmail.com)
@@ -13,255 +12,154 @@
 
 ---
 
-## 👋 About me
+## Profile
 
-I'm a cybersecurity analyst and Web3 security researcher with **5+ years** of professional experience spanning data analytics, system administration, and offensive security.
+Cybersecurity & Automation Engineer with 2+ years of enterprise automation at **General Mills** (Python RPA, SAP data pipelines, RBAC cloud migration) and hands-on offensive security: Linux hardening, container security, and smart contract auditing.
 
-**Currently:** Data Analyst & Automation Specialist at **General Mills** (multinational F&B) — building Python pipelines, anomaly detection dashboards, and security automation.
-
-**Previously:** Operations Supervisor in **Finland** (3 years) — managed international teams, built operational analytics, and worked in English in a multicultural Arctic environment.
-
-**Certifications:** RHCSA (Red Hat, 2024) · eJPT (eLearnSecurity, 2025) · Microsoft Python (2023) · In progress: eWPT · Target: OSCP ~2026
-
-**Master in Blockchain Development** (Solidity, Foundry, OpenZeppelin) — completed 2026.
-
-I don't just write code. I **ship products that solve real problems**, document them well, and break them on purpose to make them stronger.
+- **eJPT** certified (Junior Penetration Tester) · **OSCP** in progress
+- Speaker at **Hack-én 2026** on Web3 vulnerabilities
+- 2nd place, global cybersecurity hackathon (50+ teams)
 
 ---
 
-## 🎯 What I do
+## Experience
 
-<table>
-<tr>
-<th>🔐 Offensive Security</th>
-<th>⛓️ Web3 & Smart Contracts</th>
-<th>🐧 Linux & DevSecOps</th>
-</tr>
-<tr>
-<td>
+**General Mills** — Data Architecture & Automation · San Adrián, Spain · *Oct 2024 – Present*
+- Cut financial reporting from **5 hours → 40 minutes (−86%)** with a Python RPA script automating data migration into SAP, removing manual entry errors.
+- Migrated Excel-based workflows to a centralized cloud environment with **RBAC**, improving cross-team productivity by 30%.
+- Designed a scalable database architecture for automated analytics: report generation **2 hours → 5 minutes (−95%)**, with data integrity and reliable execution.
 
-- Network & Web Pentesting
-- OWASP Top 10 exploitation
-- Vulnerability assessment
-- Burp Suite, Metasploit, Nmap
-- Wireshark packet analysis
-- CTF-style challenges
+**Chain-Cortex** (Open Source) — Builder & Project Lead · Remote · *Jan 2026 – Present*
+- **Agentic AI & Threat Intel (Hydra):** multi-model LLM orchestrator (OpenAI, Anthropic, Groq/Gemini fallback, local models) with majority voting, correlating OSINT feeds (Shodan, VirusTotal, Whois) to automate vulnerability triage, honeypot detection, and malicious node analysis.
+- **Offensive Tooling & Auditing (ChainGuard):** 4-service Docker platform (Python, FastAPI, Prometheus) for continuous vulnerability scanning; audited DeFi/ERC-20 contracts with Solidity + Foundry (**120+ tests**), flagging **12+ exploit vectors** (reentrancy, access control).
+- **Linux & Container Hardening:** secured production Ubuntu VPS nodes and container workloads with read-only filesystems, capability drops, non-root execution, UFW/Fail2ban rules, and Zero-Trust SSH control channels.
 
-</td>
-<td>
-
-- Solidity smart contracts
-- Foundry (forge, cast, fuzzing)
-- Slither / Mythril static analysis
-- EVM internals & gas optimization
-- DeFi patterns (DEX, staking, escrow)
-- Smart contract auditing
-
-</td>
-<td>
-
-- RHCSA-certified Linux admin
-- Docker & Docker Compose
-- Bash & Python automation
-- n8n workflow orchestration
-- System hardening (SSH, iptables, UFW)
-- Prometheus monitoring
-
-</td>
-</tr>
-<tr>
-<th>📊 Data & Automation</th>
-<th>🌐 OSINT & Threat Intel</th>
-<th>🛠️ Maker & IoT</th>
-</tr>
-<tr>
-<td>
-
-- Python (pandas, numpy)
-- SQL (PostgreSQL, MySQL)
-- Power BI / Tableau
-- SAP cost control
-- Anomaly detection on logs
-- VBA / Excel automation
-
-</td>
-<td>
-
-- Etherscan API integration
-- VirusTotal, Shodan, Whois
-- n8n domain risk scoring
-- On-chain transaction tracing
-- Phishing infrastructure mapping
-- Domain reputation systems
-
-</td>
-<td>
-
-- Raspberry Pi hardening
-- ArduPilot / Pixhawk (drones)
-- Flipper Zero + SDR research
-- Nvidia Jetson (basic vision)
-- MQTT infrastructure (Mosquitto)
-- Local AI / LLM servers
-
-</td>
-</tr>
-</table>
+**Wild About Lapland** — Operations & Customer Supervisor · Rovaniemi, Finland · *Oct 2021 – May 2024*
+- Ran daily operations, vendor scheduling, and incident response for **1,000+ international clients** per season, maintaining a **4.7/5** customer satisfaction score.
+- Replaced manual, ad-hoc organization with a central database and standard operating procedures.
 
 ---
 
-## 🚀 Featured Projects
+## Projects
 
-### ⛓️ [ChainGuard.ai](https://github.com/santilpz28/cortex) — Web3 Risk Intelligence Platform
-*2025 — present · Python, FastAPI, React, Docker, Prometheus*
+### ⛓️ [ChainGuard](https://github.com/santilpz28/cortex) — Web3 Risk Intelligence Platform
+*Python, FastAPI, React, Docker, PostgreSQL, Prometheus*
 
-A production-grade microservices platform that combines on-chain signals (Etherscan), repository metadata, and OSINT (VirusTotal, Shodan, Whois) into unified risk scores for Web3 domains, contracts, and addresses.
+Multi-chain risk scoring platform combining on-chain signals (Etherscan, Solscan), repository metadata, and OSINT (VirusTotal, Shodan, Whois) into unified risk scores for domains, contracts, and addresses.
 
-**Highlights:**
-- 4 services: scraper, analysis, API, frontend
-- TTL cache + rate limiting, SSRF hardening
-- p99 ≤ 15s across the pipeline
-- AI multi-model orchestrator (Hydra) with <200ms failover
-- 186-entry crypto dictionary with 9 documented historical exploits
-- Defense-in-depth: 3-layer whitelist (JS / PHP / Python)
-- 34/34 security tests passing (including 15 injection attacks)
-- Live deployment + audit reports
+- 4 services: scraper, analysis, API, frontend · TTL cache, rate limiting, SSRF hardening
+- **34/34 security tests passing** (15 explicit injection attacks: SQLi, XSS, SSTI, command injection, path traversal)
+- 186-entry crypto dictionary across 5 chains with 9 documented historical exploits
+- Hydra multi-model orchestrator with <200ms failover · EIP-712 wallet auth
 
-**Stack:** Python 3.10 (FastAPI, httpx, Pydantic Settings 2.0), React + Tailwind, Docker Compose, PostgreSQL, Prometheus.
+[Repo](https://github.com/santilpz28/cortex) · [Live demo](https://santilpz28.github.io/chainguard-pages/)
 
-[📂 Repo](https://github.com/santilpz28/cortex) · [🌐 Live demo](https://santilpz28.github.io/chainguard-pages/)
+### 🔐 [PHP2Shell](https://github.com/santilpz28/php2shell-pub) — CVE-2026-109618 / CVE-2026-109619 Research
+*Python, Docker, PHP internals · CVSS v4.0 9.2 (Critical)*
 
----
+Anatomy of two critical PHP core CVEs: a use-after-free in the session layer reaching RCE without authentication. Published with a working differential detector and verified backport of the official patch.
 
-### ⛓️ [Solidity Security Labs](https://github.com/santilpz28/foundry-fundme-f25) — Foundry + Echidna
-*2025 · Solidity, Foundry, OpenZeppelin, Echidna*
+- Behavioural diff engine detecting the UAF **without** offsets or ASLR reliance
+- 3 local Docker targets: vulnerable 8.2.34, patched 8.2.35, and 8.2.34 + backported patch (same version string)
+- **6/6 UAF reproduced** on unpatched, **0/6** on patched, measured on a real binary
+- Analysis cross-checked against advisory `GHSA-6wmf-4rv5-p3rp`
 
-Hands-on labs covering smart contract security patterns: msg.sender vs tx.origin, custom errors, payable flows, CEI enforcement, access control, proxy/init guards, and upgradeable UUPS patterns.
+[Repo (ES)](https://github.com/santilpz28/php2shell-pub) · [Repo (EN)](https://github.com/santilpz28/php2shell-pub-en)
 
-- Foundry unit + fuzz tests
-- Property-based testing with Echidna
-- 90%+ test coverage on DeFi patterns (DEX router, staking, escrow)
-- Auditing methodology: threat model → line-by-line review → report
+### 🤖 [JARVIS](https://github.com/santilpz28) — Self-Hosted AI Security Agent
+*Python, Linux, Docker, LLM orchestration*
 
-[📂 Repo](https://github.com/santilpz28/foundry-fundme-f25)
+Self-hosted AI agent running local LLMs to keep code-audit data off third-party clouds, connected to a hardened Linux VPS over an encrypted Zero-Trust tunnel.
 
----
+### 🔧 [redops](https://github.com/santilpz28/redops) — Network Recon Toolkit
+*Python, asyncio + threading*
 
-### 🔐 [redops / Portly](https://github.com/santilpz28/port-scanner) — Network Recon Toolkit
-*2024 — present · Python*
+Small, auditable CLI tools for offensive security — each does one thing, no obfuscation, <200 LOC per tool.
 
-A multi-threaded port scanner with service detection, banner grabbing, and CSV export. Built for low-resource environments (VPS, IoT).
-
-- Asyncio + threading hybrid
-- Service fingerprinting
-- Output formats: JSON, CSV, plain text
-- Resilient to network jitter
-
-[📂 Repo](https://github.com/santilpz28/port-scanner)
-
----
-
-### 🌐 [n8n DomainScore Pipeline](https://github.com/santilpz28/cortex) — OSINT Orchestration
-*2025 · n8n, VirusTotal, Shodan, Whois*
-
-Workflow that scores domain risk in real time, penalizing:
-- Malicious detections (VT > 0)
-- Critical/non-standard open ports (Shodan)
-- Young domains (< 90 days)
-
-Productionized as the "domainScore" service in ChainGuard.
-
----
-
-### 🚀 [orbital-shield](https://github.com/santilpz28/orbital-shield) — Space IoT Security Lab
-*2025 · Python, Docker, MQTT/Mosquitto*
-
-Experimental security framework for satellite IoT communications. Hardened MQTT broker + Python telemetry simulator.
-
-- Mosquitto broker with TLS
-- Message signing/verification
-- Docker Compose for reproducible labs
-
-[📂 Repo](https://github.com/santilpz28/orbital-shield)
-
----
-
-### 🤖 [ai-soberana](https://github.com/santilpz28/ai-soberana) — Local AI Server
-*2025 · Python, Docker, OpenAI-compatible API*
-
-Self-hosted LLM inference stack with privacy-first design. Run models locally, no cloud, full data sovereignty.
-
-[📂 Repo](https://github.com/santilpz28/ai-soberana)
-
----
-
-## 📚 Write-ups & CTF
-
-### Featured CTF Writeups
-
-Technical writeups with production parallels, published via [chainguard-pages](https://santilpz28.github.io/chainguard-pages/#writeups).
-
-#### NavajaNegra 2025 — Caliphal Labs CTF
-
-| Challenge | Class | Vulnerability | Writeup |
-|---|---|---|---|
-| **MD5 Road** | Crypto | The server compares only the first 5 characters of an MD5 hash. Brute-forceable in under a second on any laptop. | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-md5-truncated-collision.html) |
-| **Space Pinch** | Side-channel | Each noisy copy of the secret is useless on its own. The server lets you ask 32 times, so a majority vote recovers the original. | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-reed-solomon-multisample.html) |
-
-#### Hackademics Forum CTF 2025 — Daysa
-
-| Challenge | Class | Vulnerability | Writeup |
-|---|---|---|---|
-| **MD5 Road — The Revenge** | Crypto | The server hands you `md5(secret)` in the banner. Send the MD5 internal padding as your input and the server turns into a length-extension oracle. Byte-by-byte recovery of the 52-byte secret in about 13K hash predictions. | [read →](https://santilpz28.github.io/chainguard-pages/writeups/ctf-md5-length-extension-revenge.html) |
-
-### Other CTF & learning repos
-
-| Resource | Description |
+| Tool | Function |
 |---|---|
-| [Ethernaut Solutions (Foundry)](https://github.com/santilpz28/ethernaut-foundry) | Solve Ethernaut CTF levels using Foundry |
-| [Damn Vulnerable DeFi](https://github.com/santilpz28/dvdf-solutions) | Walkthroughs of DeFi exploits |
-| [HackTheBox Write-ups](https://github.com/santilpz28/htb-writeups) | Selected retired machines, focus on web + AD |
-| [Master Signature Attacks](https://github.com/santilpz28/master-signature-attacks) | Solidity security workshop: vulnerable vs secure `ecrecover` |
-| [RedOps Toolkit](https://github.com/santilpz28/redops) | Red Team toolkit — port scanning, recon, wordlists, exploits |
+| `portly` | Multi-threaded port scanner — CIDR ranges, banner grab, JSON/CSV output |
+| `subrecon` | Subdomain enumerator — crt.sh, wordlist, VirusTotal |
+| `dirbust` | Web directory buster — status-code triage |
+
+[Repo](https://github.com/santilpz28/redops)
+
+### ⛓️ Solidity Security Labs — Foundry
+*Solidity, Foundry, OpenZeppelin*
+
+DeFi protocol implementations built from scratch with full test suites:
+
+| Project | Scope | Tests |
+|---|---|---|
+| [master-lending-protocol](https://github.com/santilpz28/master-lending-protocol) | Non-custodial lending — collateral management, EIP-712 gasless auth, liquidations | 43/43 |
+| [master-dao-governance](https://github.com/santilpz28/master-dao-governance) | On-chain DAO — proposal lifecycle, voting, quorum, treasury | 27/27 |
+| [master-staking-and-nft](https://github.com/santilpz28/master-staking-and-nft) | Fixed-amount staking pool + peer-to-peer NFT marketplace | 24/24 |
+| [master-yield-farming](https://github.com/santilpz28/master-yield-farming) | Multi-pool yield farming with `abi.encodePacked` optimizations | 14/14 |
+| [foundry-fundme-f25](https://github.com/santilpz28/foundry-fundme-f25) | Security labs — `msg.sender` vs `tx.origin`, CEI, UUPS proxies | — |
+| [ethernaut-foundry](https://github.com/santilpz28/ethernaut-foundry) | Ethernaut CTF levels solved in Foundry | — |
+
+### 🏠 [home-lab](https://github.com/santilpz28/home-lab) — Hardware & IoT Security
+*Embedded Linux, Raspberry Pi, MQTT, SDR*
+
+Personal lab for embedded security research: Raspberry Pi 4B hardening, Pixhawk drone telemetry, Flipper Zero, MQTT/TLS messaging, local AI inference.
 
 ---
 
-## 📊 GitHub Stats
+## Security Research & Write-ups
 
-<div align="center">
+**[Portfolio write-ups](https://santilpz28.github.io/chainguard-pages/#writeups)**
 
-![Profile views](https://komarev.com/ghpvc/?username=santilpz28&color=blueviolet&style=flat-square)
-![GitHub followers](https://img.shields.io/github/followers/santilpz28?style=social)
-
-</div>
-
----
-
-## 🌍 Languages
-
-- **Spanish:** Native
-- **English:** C1 (Advanced) — *3 years working full-time in English (Finland)*
-- **Russian:** Intermediate
+- **The Graph Protocol** — Independent two-axis audit, score **8.2/10**, 0 critical, 10 findings across 1,606 raw Slither reports.
+- **NavajaNegra 2025 (Caliphal Labs)** — MD5 truncated collision (5-char prefix brute-force) · Reed-Solomon multi-sample recovery.
+- **Hackademics Forum CTF 2025 (Daysa)** — MD5 length-extension attack recovering a 52-byte secret in ~13K hash predictions.
 
 ---
 
-## 📫 How to reach me
+## Skills
+
+| Area | Stack |
+|---|---|
+| **Offensive security** | Pentesting, OWASP Top 10 exploitation, vulnerability assessment, Burp Suite, Nmap, Wireshark |
+| **Web3 / Smart contracts** | Solidity, Foundry, OpenZeppelin, Slither, EIP-712, DeFi (lending, staking, DAO, yield farming), ERC-20/721 |
+| **Linux & DevSecOps** | Ubuntu/RHEL, Docker, Kubernetes, Terraform, UFW/Fail2ban, SSH hardening, Prometheus |
+| **Automation & Data** | Python (FastAPI, pandas), SQL (PostgreSQL, MySQL), SAP, RPA, RBAC |
+| **OSINT & Threat intel** | VirusTotal, Shodan, Whois, Etherscan, on-chain tracing, n8n orchestration |
+| **Cloud & AI** | AWS, self-hosted LLM inference, multi-model orchestration |
+
+---
+
+## Education
+
+**Higher Technician in IT Systems & Networks (ASIR)** — Cybersecurity specialization · The Power, Remote · *Sept 2024 – Jun 2026*
+
+**Ethereum Development & Web3 Security Intensive** — Blockchain Accelerator, Remote · *Sept 2025 – May 2026*
+
+**Bachelor's in Business Administration** — Loyola Andalucía, Córdoba · *2017 – 2021*
+Erasmus Exchange — Lapland AMK, Rovaniemi, Finland · *Jan – May 2021*
+
+---
+
+## Certifications
+
+**eJPT** — Junior Penetration Tester (eLearnSecurity) · **OSCP** — in progress
+
+---
+
+## Contact
 
 - **Email:** santi.lpz28@gmail.com
 - **LinkedIn:** [/in/santiagolopez-cyber](https://www.linkedin.com/in/santiagolopez-cyber/)
 - **Portfolio:** [santilpz28.github.io/chainguard-pages](https://santilpz28.github.io/chainguard-pages/)
 - **Phone:** +34 613 20 6565
 
-> *Open to roles in Cybersecurity, Web3 Security (Solidity auditing), and Linux/DevSecOps.*
-> *Remote-first (CET), but open to relocation in EU and Switzerland.*
-> *Available for short-term contracts and long-term engagements.*
+**Languages:** Spanish (native) · English (C1) · Russian (A2)
 
 ---
 
 <div align="center">
 
-**Built with discipline. Audited with rigor. Documented with care.**
+![Profile views](https://komarev.com/ghpvc/?username=santilpz28&color=blueviolet&style=flat-square)
 
-⚡ *"If you can't break it, you don't own it."* ⚡
+*Available for Cybersecurity, Web3 Security (Solidity auditing), and Linux/DevSecOps roles — remote-first (CET), open to EU/Switzerland relocation.*
 
 </div>
