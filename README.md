@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="Santiago López Castaño — Offensive Security, DevSecOps and Smart Contract Auditor" width="100%">
+<img src="assets/banner.jpeg" alt="Santiago López Castaño — Offensive Security, DevSecOps and Smart Contract Auditor" width="100%">
 
 <br>
 
@@ -63,7 +63,7 @@ Scans Web3 domains, contracts and addresses, then merges on-chain signals, repo 
 
 ### PHP2Shell — Anatomy of two critical PHP CVEs
 
-<img src="assets/cve-flow.png" alt="CVE-2026-109618 and CVE-2026-109619 exploitation flow and verification method" width="100%">
+<img src="assets/cve-flow.jpeg" alt="CVE-2026-109618 and CVE-2026-109619 exploitation flow and verification method" width="100%">
 
 **[Repo (ES)](https://github.com/santilpz28/php2shell-pub)** · **[Repo (EN)](https://github.com/santilpz28/php2shell-pub-en)**
 
@@ -132,7 +132,7 @@ My hardware playground: Raspberry Pi 4B hardening, Pixhawk drone telemetry, Flip
 
 ## 🧰 Stack
 
-<img src="assets/stack.png" alt="Stack by capability area: Offensive Security, Smart Contracts, Linux and DevSecOps, Automation and Data, OSINT and Intel, Cloud and AI" width="100%">
+<img src="assets/stack.jpeg" alt="Stack by capability area: Offensive Security, Smart Contracts, Linux and DevSecOps, Automation and Data, OSINT and Intel, Cloud and AI" width="100%">
 
 | Area | Tools |
 |---|---|
